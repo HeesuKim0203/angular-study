@@ -1,0 +1,7 @@
+<div class="todo-wrapper">
+    <div class="todo-id">{{todo.id}}</div>
+    <div class="todo-name" [ngClass]="todo.isDone ? 'done' : 'not-done'">{{todo.name}}</div>
+    <div class="todo-done-wrapper">
+        <input class="todo-doen" type="checkbox">
+    </div>
+</div>

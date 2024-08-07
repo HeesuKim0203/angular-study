@@ -1,0 +1,14 @@
+<div>
+    <section>
+        <form (submit)="addTodo($event, todo.value)">
+            <input type="text" placeholder="Work to do" #todo>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+    <section class="todo-list-wrapper">
+        <app-todo
+            *ngFor="let todo of todoList"
+            [todo]="todo"
+        ></app-todo>
+    </section>
+</div>
